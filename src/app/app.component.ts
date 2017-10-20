@@ -4,9 +4,17 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
+// import { MainPage } from '../pages/main/main';
+import { ServicesPage } from '../pages/services/services';
+// import { DatabasePage } from '../pages/database/database';
+import { InnerServicePage } from '../pages/inner-service/inner-service';
+import { BundlesPage } from '../pages/bundles/bundles';
+
+
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
   rootPage:any = HomePage;
 
@@ -18,5 +26,6 @@ export class MyApp {
       splashScreen.hide();
     });
   }
-}
 
+
+}

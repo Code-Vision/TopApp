@@ -1,14 +1,34 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar style="background-color:transparent;">
     <ion-title>
-      Ionic Blank
+      TopApp
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding style="background: url('img/') no-repeat; background-size: cover;">
+<div style="text-align:center; margin-top:50px">
+<h2>Select Sim</h2>
+</div>
+<div>
+  <form>
+      <div class="cc-selector">
+        <div class="control-to-left">
+          <ion-input id="visa" type="radio" name="credit-card" value="visa"></ion-input>
+          <ion-label class="drinkcard-cc visa" for="visa" style="height:150px;width:150px;"></ion-label>
+        </div>
+
+          <div class="control-to-right">
+            <ion-input id="mastercard" type="radio" name="credit-card" value="mastercard"></ion-input>
+            <ion-label class="drinkcard-cc mastercard"for="mastercard" style="height:150px; width:150px;"></ion-label>
+          </div>
+
+      </div>
+  </form>
+</div>
+
+<button (click)="toMainPage()" ion-button round style="margin-left:90px; margin-top: 80px;width:150px">Next</button>
+  <div>
+  </div>
+
 </ion-content>
